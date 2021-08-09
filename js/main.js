@@ -11,11 +11,6 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 //for bar
-// let bar = document.getElementById('bar'),
-// menu = document.getElementById('res-menu');
-// bar.onclick = function(){
-// menu.classList.toggle('toggle');
-// };
 $('#bar').click(function(){
     $('#res-menu').toggleClass("toggle");
     $('#res-menu').toggleClass("show");
@@ -23,3 +18,13 @@ $('#bar').click(function(){
     $('#two').toggleClass("two");
     $('#three').toggleClass("three");
 });
+// for second menu
+let secMenu = document.getElementById('sec-menu'),
+    secMenuBtn = document.getElementById('home');
+let firstItem = document.getElementById('forMargin');
+secMenuBtn.onclick = function(){
+    secMenu.classList.toggle('sec-menu');
+    if(window.innerWidth <= 1200){
+        firstItem.classList.toggle('forMargin')
+    }
+}

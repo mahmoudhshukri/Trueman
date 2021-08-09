@@ -88,6 +88,38 @@ header .menu ul li{
     height: 20px;
     position: relative;
 }
+header .second-menu{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 150px;
+    position: absolute;
+    left: -38px;
+    top: 38px;
+    align-items: center;
+}
+header .sec-menu{
+    display: none !important;
+}
+header .forMargin{
+    margin-bottom: 160px !important;
+}
+@media (min-width:1200px) {
+    header .menu ul li:first-child:hover .sec-menu{
+        display: flex !important;
+    }
+}
+header .second-menu li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content !important;
+}
+header .second-menu li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
 header .menu ul li.active:after{
     width: 100%;
 }

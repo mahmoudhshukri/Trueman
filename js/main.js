@@ -27,4 +27,18 @@ secMenuBtn.onclick = function(){
     if(window.innerWidth <= 1200){
         firstItem.classList.toggle('forMargin')
     }
+};
+// for slideShow
+let slideIndex = 0;
+showSlides();
+function showSlides(){
+    let i;
+    let slides = document.getElementsByClassName('img');
+    for(i = 0 ; i < slides.length ; i++){
+        slides[i].style.opacity = '0';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.opacity = "1";  
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }

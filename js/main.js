@@ -42,3 +42,17 @@ function showSlides(){
     slides[slideIndex-1].style.opacity = "1";  
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+// for text
+let text = ['web development','ux & ui designer','dreamer :)'],
+    j = 0;
+let text2 = text[j];
+function typeWriter(){
+    let typeWriter = setInterval(function(){
+        document.getElementById('type').textContent += text2[j];
+        j++;
+        if(j >= text2.length){
+            clearInterval(typeWriter);
+        }
+    },100)
+}
+typeWriter();

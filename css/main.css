@@ -636,7 +636,7 @@ header .bar .three:after{
 .story .container{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
 }
 @media (max-width:992px) {
     .story{
@@ -652,30 +652,15 @@ header .bar .three:after{
     color: #fff;
     font-size: 28px;
     position: relative;
-    width: 80%;
+    width: 90%;
 }
-.story h3::before{
-    content: '';
-    width: 75%;
-    border: 1px dotted #74868F;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-.story h3::after{
-    content: '01';
-    color: #74868F;
-    font-size: 12px;
-    position: absolute;
-    right: 0;
-    top: 14px;
-}
+
 .story .my-story{
     background-color: var(--main-color);
     padding-left: 25px;
     padding-top: 10px;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     position: relative;
 }
 .story .my-story::before{
@@ -710,7 +695,7 @@ header .bar .three:after{
 .video .container{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
 }
 @media (max-width:992px) {
     .video{
@@ -730,29 +715,14 @@ header .bar .three:after{
     color: #fff;
     font-size: 28px;
     position: relative;
-    width: 80%;
+    width: 90%;
 }
-.video h3::before{
-    content: '';
-    width: 75%;
-    border: 1px dotted #74868F;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-.video h3::after{
-    content: '01';
-    color: #74868F;
-    font-size: 12px;
-    position: absolute;
-    right: 0;
-    top: 14px;
-}
+
 .video .vid{
     padding-left: 25px;
     padding-top: 10px;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     background-image: url(../images/video.jpg);
     background-size: cover;
     height: 500px;
@@ -785,3 +755,171 @@ header .bar .three:after{
         }
     }
 /* end video */
+/* start services */
+.services{
+    padding-left: 490px;
+}
+.services .container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+@media (max-width:992px) {
+    .services{
+        padding-left: 0;
+    }
+    .services .container,
+    .services .title,
+    .services .service
+    {
+        width: 100% !important;
+    }
+}
+@media (max-width: 576px) {
+    .services .service{
+        flex-direction: column;
+    }
+    .services .service .srv{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}
+.services .title{
+    color: #fff;
+    font-size: 28px;
+    position: relative;
+    width: 90%;
+}
+
+.services .service{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.services .srv{
+    flex-basis: 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #00283A;
+    border-radius: 10px;
+}
+.services .srv i{
+    color: #657D88;
+    font-size: 50px;
+}
+.services .srv h3{
+    color: #fff;
+    font-size: 16px;
+}
+.services .srv p{
+    color: #657D88;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.services .srv a {
+    color: var(--second-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.services .srv a i{
+    color: var(--second-color);
+    font-size: 14px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+.services .srv a:hover i{
+    margin-left: 10px;
+}
+/* end services */
+/* start portfolio */
+.portfolio{
+    padding-left: 490px;
+}
+.portfolio .container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+@media (max-width:992px) {
+    .portfolio{
+        padding-left: 0;
+    }
+    .portfolio .container,
+    .portfolio .h3,
+    .portfolio .porto
+    {
+        width: 100% !important;
+    }
+}
+@media (max-width: 576px) {
+    .portfolio .porto{
+        flex-direction: column;
+    }
+    .portfolio .porto .port{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}
+.portfolio h3{
+    color: #fff;
+    font-size: 28px;
+    position: relative;
+    width: 90%;
+}
+.portfolio .porto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    overflow: hidden;
+}
+.portfolio .port{
+    flex-basis: 48%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: #00283A;
+    border-radius: 10px;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.portfolio .port:hover .des{
+    bottom: 0;
+}
+.portfolio .port img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.portfolio .port .des{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    transition: 0.5s;
+    position: absolute;
+    bottom: -100px;
+}
+.portfolio .port .des p{
+    color: #fff;
+    font-size: 18px;
+}
+.portfolio .port .des .more{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: var(--second-color);
+}
+.portfolio .port .des .more i{
+    font-size: 16px;
+    color: #fff;
+}
+/* end portfolio */

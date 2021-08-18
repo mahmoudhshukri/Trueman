@@ -56,3 +56,14 @@ function typeWriter(){
     },100)
 }
 typeWriter();
+// for languages
+let firstProg = '100%',
+    secondProg = '90%',
+    thridProg = '80%',
+    fourthProg = '60%';
+window.onload = function(){
+    $('#first').animate({width : firstProg},1000);
+    $('#second').animate({width : secondProg},1000);
+    $('#third').animate({width : thridProg},1000);
+    $('#fourth').animate({width : fourthProg},1000);
+}

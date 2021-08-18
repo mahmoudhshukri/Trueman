@@ -923,3 +923,84 @@ header .bar .three:after{
     color: #fff;
 }
 /* end portfolio */
+/* start languages */
+.languages{
+    padding-left: 490px;
+}
+.container{
+    display: flex;
+    width: 90%;
+}
+@media (max-width:992px) {
+    .languages{
+        padding-left: 0;
+    }
+    .languages .container,
+    .languages .h3
+    {
+        width: 100% !important;
+    }
+    .languages h3{
+        margin-left: 10px !important;
+    }
+    .languages .language{
+        flex-basis: 50% !important;
+    }
+}
+@media (max-width: 576px) {
+    .languages .container{
+        flex-direction: column;
+    }
+    .languages .language{
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+.languages h3{
+    color: #fff;
+    font-size: 28px;
+    position: relative;
+    width: 90%;
+    margin-left: 60px;
+}
+.languages .language{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 43%;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.languages .language .lang{
+    padding: 10px;
+}
+.languages .language .lang .la{
+    display: flex;
+    justify-content: space-between;
+}
+.languages .language .lang .la h4{
+    color: #fff;
+    font-size: 18px;
+}
+.languages .language .lang .la span{
+    color: #74868F;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.languages .language .lang .progress{
+    background-color: #02162B;
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+.languages .language .lang .progress span{
+    display: block;
+    height: 100%;
+    position: relative;
+    background-color: var(--second-color);
+    width: 0;
+}
+/* end languages */

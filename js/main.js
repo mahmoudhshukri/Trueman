@@ -40,7 +40,7 @@ function showSlides(){
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.opacity = "1";  
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 // for text
 let text = ['web development','ux & ui designer','dreamer :)'],

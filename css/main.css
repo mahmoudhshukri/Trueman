@@ -351,6 +351,7 @@ header .bar .three:after{
     position: relative;
     overflow: hidden;
     height: 600px;
+    width: 100%;
 }
 .slideshow .slideImg::after{
     content: '';
